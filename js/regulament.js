@@ -1,0 +1,2 @@
+const actualPage = "regulament";
+

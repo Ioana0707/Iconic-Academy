@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: rgb(253, 251, 251);
+  font-family: 'Roboto', sans-serif;
+  background-repeat: no-repeat;
+}
+
+.b_title{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  background-image:linear-gradient(to right bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 1px rgba(255, 200, 0, .3));
+  animation: MoveBackgroundPosition 6s ease-in-out infinite;
+}
+.ticket_title{
+    font-size: 60px;
+  
+}
+
+.signUp-access{
+  background-color: #BF953F;
+  color: #fbfbfb;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-top: 30px;
+  margin-bottom: 0%;
+  border-radius: 10px;
+  }
+  .signUp-access:hover{
+    color: #fefdfc;
+    background-color: #fb0404;
+  }
+  
+  .section-fluid-main{
+    position: relative;
+    display: block;
+    overflow: hidden;
+     margin-right: auto;
+     margin-left: auto;
+    max-width: 1140px;
+  }
+  .section-row{
+   
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+   
+  }
+  .section-row:hover .section-col{
+    opacity: 0.1;
+  }
+  .section-col{
+    position: relative;
+    width: 100%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    transition: opacity 250ms linear;
+  }
+  .section-row .section-col:hover{
+    opacity: 1;
+  }
+  .section-image{
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 15px;
+  }
+  .section-in{
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .section-in img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 250ms linear;
+  }
+  .section-col:hover .section-in img{
+    transform: scale(1.1) rotate(-3deg);
+  }
+  
+  .hover-text{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+    pointer-events: none;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+    mix-blend-mode: difference;
+  }
+  .hover-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1;
+    color: #fafaf7;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 250ms linear, opacity 250ms ease;
+  }
+  .section-col:hover + .hover-text h2{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+
+/* Begin Media Queries*/
+
+/* # Mobile*/
+@media only screen and (max-width: 480px) {
+  
+.section-fluid-main{
+    position: relative;
+    display: block;
+    overflow: hidden;
+     margin-right: auto;
+     margin-left: auto;
+     max-width: 100%;
+  }
+  .section-image{
+    padding: 5px;
+  }
+  .section-col{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hover-text h2{
+    font-size: 12vw;
+  }
+  .signUp-access{
+    margin-left: 20%;
+    margin-bottom: 20px;
+  }
+  .b_title{
+    margin-top: 10px;
+    background-size: 70%;
+    text-align: center;
+  }
+
+
+}
+
+/* # Tablet */
+@media only screen and (max-width: 768px) {
+
+.section-col{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hover-text h2{
+    font-size: 12vw;
+  }
+  .signUp-access{
+    margin-left: 30%;
+  }
+  .b_title{
+    text-align: center;
+  }
+
+}

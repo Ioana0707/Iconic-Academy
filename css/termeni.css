@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+}
+section {
+  margin: 80px;
+  max-width: 100%;
+  height: auto;
+}
+h3 {
+  margin: 40px;
+}
+main {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 480px) {
+  main {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  section {
+    margin: 10px;
+  }
+}
